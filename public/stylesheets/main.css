@@ -1,0 +1,14 @@
+.jumbotron{
+    background-image: url("../imgs/crossroad.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#face{
+    height: 14em;
+    width: 14em;
+}
+
+.same-size{
+    max-height: 300px;
+}

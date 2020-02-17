@@ -4,11 +4,27 @@
     background-repeat: no-repeat;
 }
 
-#face{
-    height: 14em;
-    width: 14em;
-}
-
 .same-size{
     max-height: 300px;
+}
+
+footer{
+    background-color: #f8f9fa;
+}
+
+.footer-list-item{
+    height: 3em;
+    width: 3em;
+    line-height: 3em;
+    border-radius: 100%;
+    background: #343a40;
+    color: #7c7c7d
+}
+
+.footer-link{
+    color: #7c7c7d
+}
+
+a:hover{
+    color: #A3A3A4;
 }

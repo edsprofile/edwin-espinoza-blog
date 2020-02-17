@@ -1,4 +1,4 @@
-<%- include("../partials/header") %>
+<%- include("partials/header") %>
 <div class="jumbotron jumbotron-fluid text-white">
     <div class="container text-center">
         <h1 class="display-1">Edwin Espinoza</h1>
@@ -15,9 +15,9 @@
 <div class="container mb-5">
     <div class="row">
         <div class="col-md-4 d-flex justify-content-center">
-            <img id="face" class="img-thumbnail rounded-circle img-fluid"
+            <img id="face" class="img-thumbnail rounded-circle"
                  alt="face"
-                 src="/imgs/placeholder.jpg" />
+                 src="/imgs/thumbnail.jpg" />
         </div>
         <div class="col-md-8">
             <h1 class="font-italic text-muted">about</h1>
@@ -68,4 +68,13 @@
         </div>
     </div>
 </div>
-<%- include("../partials/footer") %>
+
+<!-- Break with contact me info -->
+<footer class="border-top py-3 d-flex justify-content-center">
+    <ul class="list-inline m-0">
+        <li class="list-inline-item footer-list-item text-center"><a class="footer-link" href="/"><i class="fas fa-home px-2 icon-large"></i></a></li>
+        <li class="list-inline-item footer-list-item text-center"><a class="footer-link" href="https://github.com/edsprofile"><i class="fab fa-github px-2"></i></a></li>
+        <li class="list-inline-item footer-list-item text-center"><a class="footer-link" href="mailto:espined48@gmail.com"><i class="fas fa-envelope px-2"></i></a></li>
+    </ul>
+</footer>
+<%- include("partials/footer") %>

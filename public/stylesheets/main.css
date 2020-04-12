@@ -1,3 +1,33 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+}
+
+.wave-container{
+    background: rgba(0,0,0, 0);
+}
+
+@keyframes animateWave {
+  0% {
+    transform: scale(1,0);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
+.wave-container > svg {
+  display: block;
+  transform-origin: bottom;
+  animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
 .jumbotron{
     background-image: url("../imgs/crossroad.webp");
     background-size: cover;
@@ -30,6 +60,16 @@ footer{
 }
 
 .card-img{
-    width: 160px;
-    height: auto;
+    height: 100%;
+    max-height: 200px;
+}
+
+.card-body{
+    height: 100%;
+    max-height: 200px;
+}
+
+img{
+    border-style: none;
+    object-fit: cover;
 }

@@ -19,34 +19,44 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="/">Edwin Espinoza</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="navbarDropdown" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto text-right">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/"><i class="fas fa-home px-2"></i>Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/edsprofile"><i class="fab fa-github px-2"></i>Github</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mailto:espined48@gmail.com"><i class="fas fa-envelope px-2"></i>Email</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-project-diagram px-2"></i>Projects
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDrop">
-                                <a class="dropdown-item" href="https://github.com/edsprofile/taskxt">Taskxt (REU)</a>
-                                <a class="dropdown-item" href="https://github.com/edsprofile/codetyper">Code Typer</a>
-                                <a class="dropdown-item" href="https://github.com/edsprofile/dogApi">dogApi</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="/">All projects</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+
+                <a class="navbar-brand" href="/">
+                    <% if(currentUser){%>
+                        Logged in,
+                    <% } %>
+                    Edwin Espinoza</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarDropdown" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto text-right">
+                            <% if(currentUser){%>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/logout"><i class="fas fa-sign-out-alt px-2"></i>Logout</a>
+                                </li>
+                            <% } %>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/"><i class="fas fa-home px-2"></i>Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/edsprofile"><i class="fab fa-github px-2"></i>Github</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:espined48@gmail.com"><i class="fas fa-envelope px-2"></i>Email</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-project-diagram px-2"></i>Projects
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDrop">
+                                    <a class="dropdown-item" href="https://github.com/edsprofile/taskxt">Taskxt (REU)</a>
+                                    <a class="dropdown-item" href="https://github.com/edsprofile/codetyper">Code Typer</a>
+                                    <a class="dropdown-item" href="https://github.com/edsprofile/dogApi">dogApi</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/">All projects</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </nav>

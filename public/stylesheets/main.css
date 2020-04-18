@@ -1,15 +1,3 @@
-html{
-    box-sizing: border-box;
-}
-
-*, *::before, *::after{
-    box-sizing: inherit;
-}
-
-body{
-    margin: 0;
-}
-
 .wave-container{
     background: rgba(0,0,0, 0);
 }
@@ -29,7 +17,7 @@ body{
 }
 
 .jumbotron{
-    background-image: url("../imgs/crossroad.webp");
+    background-image: url("../imgs/crossroad.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -70,6 +58,5 @@ footer{
 }
 
 img{
-    border-style: none;
     object-fit: cover;
 }

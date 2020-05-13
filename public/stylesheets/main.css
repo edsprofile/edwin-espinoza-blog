@@ -60,3 +60,8 @@ footer{
 img{
     object-fit: cover;
 }
+
+#post-img{
+    width: 400px;
+    height: 200px;
+}

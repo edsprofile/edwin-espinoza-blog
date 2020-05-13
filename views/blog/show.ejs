@@ -9,6 +9,10 @@
 <% } %>
 <div class="container">
     <h1 class="display-4 text-center pt-3"><%= post.title %></h1>
+    <img id="post-img" src="/imgs/<%= post.image %>" class="card-img d-none d-md-block mx-auto my-2" alt="<%= post.image %>">
     <p><%= post.content %></p>
+</div>
+<div class="container">
+    <a class="btn btn-primary" href="/blog">Back to all Post</a>
 </div>
 <%- include("../partials/footer.ejs")%>

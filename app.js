@@ -85,6 +85,10 @@ app.get("/", function(req, res){
     res.render("landing");
 });
 
+app.get("/projects", function(req, res){
+    res.render("projects");
+});
+
 // Index route for blogs
 app.get("/blog", function(req, res){
     Post.find({}, function(err, allPost){
@@ -174,6 +178,11 @@ app.delete("/blog/:id", function(req, res){
             res.redirect("/blog/");
         }
     });
+});
+
+// creating projects routes
+app.get("/project", function(req,res){
+    res.render("project");
 });
 
 var port = process.env.PORT || 3000;

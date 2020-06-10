@@ -1,0 +1,2 @@
+* README
+This was the the code for my website I was trying to build a blog using a RESTful application on Heroku. This is now old code and I am currently working on a new solution for my personal website.

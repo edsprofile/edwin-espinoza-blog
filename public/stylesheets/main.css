@@ -2,26 +2,9 @@ body{
     line-height: 1.15;
 }
 
-.wave-container{
-    background: rgba(0,0,0, 0);
-}
-
-@keyframes animateWave {
-  0% {
-    transform: scale(1,0);
-  }
-  100% {
-    transform: scale(1,1);
-  }
-}
-.wave-container > svg {
-  display: block;
-  transform-origin: bottom;
-  animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
-}
 
 .jumbotron{
-    background-image: url("../imgs/crossroad.png");
+    background-image: url("../imgs/banner.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
